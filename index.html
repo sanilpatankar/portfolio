@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
-  <body>
+  <body ng-app="">
     <br/>
     <section style="background: #f1f1f1;">
       <header class="container">
@@ -234,8 +235,9 @@
               <br/>
               <div class="form-group">
                 <form action="mailto:sanilpatankar@gmail.com" enctype="text/plain" method="post">
-                  <input class="form-control" type="email" placeholder="email" required="required"/>
+                  <input class="form-control" type="email" placeholder="email" required="required" ng-model="em"/>
                   <br/>
+                  {{em}}
                   <input class="form-control" type="text" placeholder="Subject">
                   <br/>
                   <textarea id="overflowStyle" class="form-control" placeholder="Message.." rows="20" style="resize: none;"></textarea>

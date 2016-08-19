@@ -1,0 +1,19 @@
+/* Small devices (tablets, 768px and up) */
+#overflowStyle::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #F5F5F5;}
+#overflowStyle::-webkit-scrollbar{width: 5px;background-color: #F5F5F5;}
+#overflowStyle::-webkit-scrollbar-thumb{background-color: #333333;border: 2px solid #333333;}
+@media (max-width: 768px) {
+    .sidebar{display: none;}
+    .mainContent{width: 100%;}
+    .displayPic{width: 100%; clear: both;}
+    .displayPicimg{display: block; margin-left: auto; margin-right: auto;}
+    .displayName{width: 100%; clear: both; text-align: center;}
+    .resume{width: 100%; text-align: center;}
+    .cursors{cursor: pointer;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

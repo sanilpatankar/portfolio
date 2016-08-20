@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="client/js/portfolio.js"></script>
   </head>
-  <body ng-app="portfolio" ng-controller="myController">
+  <body ng-app="myModule" ng-controller="myController">
     <br/>
     <section style="background: #f1f1f1;">
       <header class="container">
@@ -246,7 +246,7 @@
               <p style="text-align: center;">----- OR -----</p>
               <br/>
               <div class="form-group">
-                <form enctype="text/plain" method="post">
+                <form action="https://formspree.io/sanilpatankar@gmail.com" method="post">
                   <input name="name" class="form-control" type="text" placeholder="Name" ng-model="formData.name" required />
                   <br/>
                   <input name="_replyto" class="form-control" type="email" placeholder="email" ng-model="formData.email" required/>
@@ -255,7 +255,7 @@
                   <br/>
                   <textarea name="message" id="overflowStyle" class="form-control" placeholder="Message.." ng-model="formData.message" rows="20" style="resize: none;" required></textarea>
                   <br/>
-                  <button class="btn btn-success pull-right" type="submit" value="submit" ng-click="formSubmit()">Submit</button>
+                  <button class="btn btn-success pull-right" type="submit" value="send" ng-click="formSubmit()">Submit</button>
                 </form>
                 <div class="clearfix"></div>
               </div>

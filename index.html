@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <title>Portflio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="client/css/responsive.css" />
+    <link rel="stylesheet" href="client/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="client/js/portfolio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0/angular-material.min.js"></script>
   </head>
-  <body>
+  <body ng-app="myModule" ng-controller="myController">
     <br/>
     <section style="background: #f1f1f1;">
       <header class="container">
@@ -26,7 +31,7 @@
           <div class="col-md-offset-4 col-xs-2 resume">
             <br/>
             <br/>
-            <a class="btn btn-success" href="pdf/resume.pdf" target="_blank">Resume</a>
+            <a class="btn btn-success" href="client/pdf/resume.pdf" target="_blank">Resume</a>
           </div>
           <div class="clearfix"></div>
           <br/>
@@ -88,7 +93,7 @@
             <div class="col-xs-12" style="background: #f1f1f1;">
               <hr style="background-color: #ffffff"/>
               <div class="row">
-                <img class="col-xs-4" src="images/proj1.png" width="200" height="200"/>
+                <div class="col-xs-4"><br/><img class="img-responsive" src="client/images/proj1.png"/></div>
                 <div class="col-xs-8">
                   <h3>The Clothes Spa.</h3>
                   <p>The Clothes spa is a website of a small scale laundry business in Atlanta. It was a free lancing project for the the firm Craft1 Digital.</p>
@@ -97,7 +102,7 @@
               </div>
               <br/>
               <div class="row">
-                <img class="col-xs-4" src="images/pic1.jpg" width="200" height="200" />
+                <div class="col-xs-4"><br/><img class="img-responsive" src="client/images/pic1.jpg" /></div>
                 <div class="col-xs-8">
                   <h3>Information Extraction from Financial News Articles.</h3>
                   <p>A machine learning project where information was extracted from the news article to match a summary template and identify the type of financial article. The programming was done in Python along with IBM’s data analytical tool ‘System-T’.</p>
@@ -105,7 +110,7 @@
               </div>
               <br/>
               <div class="row">
-                <img class="col-xs-4" src="images/pic3.jpg" width="200" height="200" />
+                <div class="col-xs-4"><br/><img class="img-responsive" src="client/images/pic3.jpg" /></div>
                 <div class="col-xs-8">
                   <h3>Pharmaceutical Representative Database.</h3>
                   <p>Project based on Oracle PL/SQL to keep a record of all the medicine samples, information of Doctors and medical representatives and distribution of those medicine samples for a pharmaceutical company. The project monitored all the phases from the inventory to the distribution of the samples.</p>
@@ -113,7 +118,7 @@
               </div>
               <br/>
               <div class="row">
-                <img class="col-xs-4" src="images/pic1.jpg" width="200" height="200" />
+                <div class="col-xs-4"><br/><img class="img-responsive" src="client/images/pic1.jpg" /></div>
                 <div class="col-xs-8">
                   <h3>Loan Approval System.</h3>
                   <p>A data analytical project where the loan of an applicant was either approved, denied or required further processing. The project was based on supervised machine learning concepts and used WEKA tool to classify the applicants and get all the statistical data about the application process.</p>
@@ -121,7 +126,7 @@
               </div>
               <br/>
               <div class="row">
-                <img class="col-xs-4" src="images/pic4.jpg" width="200" height="200" />
+                <div class="col-xs-4"><br/><img class="img-responsive" src="client/images/pic4.jpg" /></div>
                 <div class="col-xs-8">
                   <h3>Literature Review on EHR in Public Health Informatics to Boost Clinical Research.</h3>
                   <p>Literature review on electronic health records which highlights on how EHR is the bridge between health informatics and clinical research.</p>
@@ -129,33 +134,13 @@
               </div>
               <br/>
               <div class="row">
-                <img class="col-xs-4" src="images/pic2.jpg" width="200" height="200" />
+                <div class="col-xs-4"><br/><img class="img-responsive" src="client/images/pic2.jpg" /></div>
                 <div class="col-xs-8">
                   <h3>Influence of Return on Investment on Knowledge Management Strategies.</h3>
                   <p>Literature review which focuses on how ROI affect the KMS especially knowledge sharing in an organization.</p>
                 </div>
               </div>
               <br/>
-            </div>
-            <div class="clearfix"></div>
-            <br/>
-            <div class="col-xs-12" style="background: #f1f1f1;">
-              <h3>Other Projects</h3>
-              <br/>
-              <div>
-                <h4>Project 2</h4>
-                <p>Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
-              </div>
-              <br/>
-              <div>
-                <h4>Project 2</h4>
-                <p>Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
-              </div>
-              <br/>
-              <div>
-                <h4>Project 2</h4>
-                <p>Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
-              </div>
             </div>
             <div class="clearfix"></div>
             <br/>
@@ -263,14 +248,16 @@
               <p style="text-align: center;">----- OR -----</p>
               <br/>
               <div class="form-group">
-                <form action="mailto:sanilpatankar@gmail.com" enctype="text/plain" method="post">
-                  <input class="form-control" type="email" placeholder="email" required="required"/>
+                <form name="contactForm" enctype="text/plain" method="post">
+                  <input class="form-control" type="text" placeholder="Name" ng-model="formData.name" required />
                   <br/>
-                  <input class="form-control" type="text" placeholder="Subject">
+                  <input class="form-control" type="email" placeholder="email" ng-model="formData.email" required/>
                   <br/>
-                  <textarea id="overflowStyle" class="form-control" placeholder="Message.." rows="20" style="resize: none;"></textarea>
+                  <input class="form-control" type="text" placeholder="Subject" ng-model="formData.subject" required />
                   <br/>
-                  <button class="btn btn-success pull-right" type="submit" value="submit">Submit</button>
+                  <textarea id="overflowStyle" class="form-control" placeholder="Message.." ng-model="formData.message" rows="20" style="resize: none;" required></textarea>
+                  <br/>
+                  <button class="btn btn-success pull-right" type="submit" value="submit" ng-click="formSubmit()">Submit</button>
                 </form>
                 <div class="clearfix"></div>
               </div>
@@ -284,7 +271,7 @@
     <section>
       <footer>
         <div class="col-xs-12" style="background-color: #333333;">
-          <p>footer</p>
+          <p>.</p>
         </div>
       </footer>
     </section>

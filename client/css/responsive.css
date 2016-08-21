@@ -1,5 +1,5 @@
 /* Small devices (tablets, 768px and up) */
-body{font-family: "Open Sans", sans-serif; font-size: 15px; line-height: 22px;}
+body{font-family: "Open Sans", sans-serif; font-size: 14px; line-height: 22px;}
 #overflowStyle::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #F5F5F5;}
 #overflowStyle::-webkit-scrollbar{width: 5px;background-color: #F5F5F5;}
 #overflowStyle::-webkit-scrollbar-thumb{background-color: #333333;border: 2px solid #333333;}

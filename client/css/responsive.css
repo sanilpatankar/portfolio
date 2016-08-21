@@ -5,6 +5,7 @@ body{font-family: "Open Sans", sans-serif; font-size: 14px; line-height: 22px;}
 #overflowStyle::-webkit-scrollbar-thumb{background-color: #333333;border: 2px solid #333333;}
 .linkedin{color:#333333;}
 .linkedin:hover{color: #1a2221;}
+.linkedin:active{color: #1a2221;}
 @media (max-width: 768px) {
     .sidebar{width: 100%;}
     .mainContent{width: 100%;}

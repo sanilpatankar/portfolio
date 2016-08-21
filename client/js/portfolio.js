@@ -1,7 +1,7 @@
 /**
  * Created by sanil on 8/18/2016.
  */
-
+/*
 angular.module("myModule",[])
     .controller("myController", function ($scope, $http) {
         $scope.formData = {};
@@ -10,4 +10,4 @@ angular.module("myModule",[])
         };
     });
 
-
+*/
